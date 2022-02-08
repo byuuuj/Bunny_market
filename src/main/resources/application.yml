@@ -1,0 +1,48 @@
+server:
+  port: 9002  servlet:    context-path: 
+
+# jsp setting
+spring:
+  main:    allow-bean-definition-overriding: true
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/shop/
+#      suffix: .jsp
+  devtools:
+    livereload:
+      enabled: true
+
+# mysql setting
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://bunnymarket-db.clihali9mgfh.ap-northeast-2.rds.amazonaws.com:3306/bunny-db
+    username: admin
+    password: GqyuWLHuGU6gtM4
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    protocol: smtp
+    default-encoding: UTF-8
+    username: marketbunny6@gmail.com
+    password: sogeppueagllkajo
+    properties:
+      mail:  
+        smtp:
+          auth: true 
+          starttls:
+            enable: true
+          ssl:
+            trust: smtp.gmail.com
+            protocals: TLSv1.2
+        transport:
+          protocal: smtp
+           # debug: true
+  # file size setting           servlet:    multipart:
+      enabled: true      max-file-size: 50MB      max-request-size: 50MB        
+# mybatis setting
+mybatis:
+  type-aliases-package: data.*
+  mapper-locations:
+  - /mapper/**/*.xml
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="data.mapper.ProductLikeMapper">
+	<select id="plikeCheck" parameterType="String" resultType="int">
+		select count(*) from product_like where id=#{id} and product=#{product}
+	</select>
+
+	<insert id="insertPlike" parameterType="pldto">
+		insert into product_like(id,product) values(#{id},#{product})
+	</insert>
+	
+	<delete id="deletePlike" parameterType="pldto">
+		delete from product_like  where id=#{id} and product=#{product}
+	</delete>
+	
+	<select id="getTotalCount" parameterType="String" resultType="int">
+		select count(*) from product_like where id=#{id}
+	</select>
+	
+	<select id="getList" resultType="pdto" parameterType="HashMap">
+		select
+			p.idx, p.title, p.uploadfile, p.price, p.content, p.writeday, p.category, p.chatcount, p.likecount, p.readcount, p.id, p.sellstatus
+		from 
+			product_like as pl
+			inner join product as p
+				on pl.product = p.idx 
+		where
+			pl.id=#{id}
+		order by
+			idx desc 
+		limit #{start},#{perpage}
+	</select>
+</mapper>

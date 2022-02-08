@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="data.mapper.ProductMapper">
+	<select id="getTotalCount" resultType="int" parameterType="String">
+		SELECT COUNT(*) 
+		FROM product
+		WHERE 1=1
+		<if test="location != 'no'">
+			AND local = #{location}
+		</if>
+		
+		<if test="category!='전체'">
+			AND category = #{category}
+		</if>
+		
+	 	<if test="keyword != 'no'">
+			AND title LIKE CONCAT('%',#{keyword},'%') 
+		</if> 
+	</select>
+	
+	<select id="getList" resultType="pdto" parameterType="HashMap">
+		select * from product
+		where 1=1
+		<if test="location != 'no'">
+			and local = #{location}
+		</if>
+		
+		<if test="category != '전체'">
+			and category = #{category}
+		</if>
+		
+	 	<if test="keyword != 'no'">
+			and title like CONCAT('%',#{keyword},'%') 
+		</if> 
+		order by idx desc limit #{start},#{perpage}
+	</select>
+	
+	<select id="getData" resultType="pdto"  parameterType="String">
+		select * from product where idx=#{idx}
+	</select>
+	
+	<insert id="insertData" parameterType="pdto">
+		insert into product(title, uploadfile, price, content, writeday, category, sellstatus, id, local) 
+		values(#{title},#{uploadfile},#{price},#{content},now(),#{category},#{sellstatus}, #{id}, #{local})
+	</insert>
+	
+	<select id="getMaxIdx" resultType="int">
+		select ifnull(max(idx),0) from product
+	</select>
+	
+	<update id="updateReadcount" parameterType="String">
+		update product set readcount = readcount+1 where idx=#{idx}
+	</update>
+	
+	<update id="updateLikecount" parameterType="String">
+		update product set likecount = likecount+1 where idx=#{idx}
+	</update>
+	
+	<update id="updateLikeMinuscount" parameterType="String">
+		update product set likecount = likecount-1 where idx=#{idx}
+	</update>
+	
+	<update id="updateChatcount" parameterType="String">
+		update product set chatcount = chatcount+1 where idx=#{idx}
+	</update>
+	
+	<select id="getLikeCount" parameterType="String" resultType="int">
+		select likecount from product where idx=#{idx}
+	</select>
+
+	<select id="chatCheck" parameterType="String" resultType="int">
+		select count(*) from productChat where idx=#{idx}
+	</select>
+	
+	<update id="updateData" parameterType="String">
+		update product set title=#{title}, uploadfile=#{uploadfile}, price=#{price}, content =#{content}, category=#{category}, local=#{local} 
+		where idx= #{idx}
+	</update>
+	
+	<delete id="deleteData" parameterType="String">
+		delete from product where idx=#{idx}
+	</delete>
+	
+	<select id="getRelateList" parameterType="String" resultType="pdto">
+		select * from product where category=#{category} and idx!=#{idx} order by idx desc limit 4
+	</select>
+	
+	<update id="updateStatus" parameterType="HashMap">
+		update product set sellstatus = #{status} where idx=#{idx}
+	</update>
+	
+	<select id="sellList" parameterType="HashMap" resultType="pdto">
+      select * from product order by idx desc limit #{start},#{perpage}
+   </select>
+   
+   <select id="getSellstatus" parameterType="String" resultType="pdto">
+		select * from where sellstatus =#{sellstatus}
+	</select>
+
+   <select id="getListByStatus" parameterType="HashMap" resultType="pdto">
+		select
+			*
+		from
+			product
+		<if test="sellstatus != 'no' and sellstatus != '전체'">
+		where
+			sellstatus =#{sellstatus}
+		</if>
+		order by idx desc 
+		limit #{start},#{perpage}
+	</select>
+   
+	<select id="getMainList" resultType="pdto">
+		select * from product order by idx desc limit 0,12
+	</select>
+	
+	<select id="getStatusList" parameterType="String" resultType="pdto">
+		select * from product where id=#{id} 
+		<if test="sellstatus != 'no' and sellstatus != '전체'">
+			and sellstatus = #{sellstatus}
+		</if>
+		order by idx desc
+	</select>
+	
+	<select id="getStatusCount" parameterType="String" resultType="int" >
+		select count(*) from product where id=#{id}
+		<if test="sellstatus != 'no'">
+			and sellstatus = #{sellstatus}
+		</if>
+	</select>
+</mapper>

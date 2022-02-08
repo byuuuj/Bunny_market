@@ -1,0 +1,45 @@
+.logo {
+	width: 150px;
+	height: 90px;
+	background: url(../image/logo2.png) no-repeat center/100%;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+
+
+.intro-one-div{
+	margin-bottom: 80px;
+}
+
+
+.first-div{
+	margin-bottom: 50px;
+	
+}
+
+
+#benner{
+	width:100%;
+	margin-bottom: 150px;
+}
+
+
+button{
+	
+	margin-top: 10px;
+}
+
+
+@media all and (max-width:768px) {
+
+	.img{
+		width:300px;
+	
+	}
+	body{
+	font-size: 10px;}
+
+	
+
+}
