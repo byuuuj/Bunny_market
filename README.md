@@ -1,7 +1,9 @@
 ### Bunny_market
 
-### 바니마켓(바로 니곁에)<br>
-사용자들이 회원가입 후 중고 물품을 서로 거래하며 이벤트,상품,커뮤니티를 이용할 수 있는 온라인 중고거래 반응형 웹
+### 🐰바니마켓💛 : 바로 니곁에 마켓<br>
+![바니마켓](https://github.com/user-attachments/assets/46c6a134-101c-477e-aade-8d73bbe1a868)
+
+지역 설정을 기반으로 한 온라인 중고거래 반응형 웹사이트(PC/Tablet/Mobile)
 
 ### Team Project <br>
 -개발인원 : 6명<br>
