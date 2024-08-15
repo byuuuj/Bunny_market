@@ -2,17 +2,16 @@
 ## 🐰바니마켓💛 : 바로 니곁에 마켓<br>
 ![바니마켓](https://github.com/user-attachments/assets/46c6a134-101c-477e-aade-8d73bbe1a868)
 
-지역 설정을 기반으로 한 온라인 중고거래 반응형 웹사이트(PC/Tablet/Mobile)
+📍 지역 설정을 기반으로 한 온라인 중고거래 반응형 웹사이트(PC/Tablet/Mobile)
 
 ### Team Project <br>
--개발인원 : 6명<br>
 -개발환경 : <br>
-	[백]<br>
+	[ 백엔드 ]<br>
 	Spring boot, MySQL, JAVA<br>
-	[프론트]<br>
-	HTML,CSS,JQeury,JavaScript<br>
-	[기타]<br>
-	AWS,Git,GitHub
+	[ 프론트 ]<br>
+	HTML, CSS, JQeury, JavaScript<br>
+	[ 기타 ]<br>
+	AWS, Git, GitHub
 
 ### 요구사항 분석<br>
 1.회원가입 및 로그인<br>
