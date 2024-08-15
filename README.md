@@ -24,6 +24,11 @@
 　　　AWS, Git, GitHub
 
 
+# ERD💙
+![175081886-3c061efd-d820-4639-881b-c4d6154fd2f8](https://github.com/user-attachments/assets/8653d3dd-9953-49d7-b8eb-cb5a623f70d7)
+
+
+
 ## ⭐️⭐️ 프로젝트 기여 부분 ⭐️⭐️<br>
 *　동네생활(커뮤니티)<br>
 1.　커뮤니티 리스트,상세페이지 출력<br>
