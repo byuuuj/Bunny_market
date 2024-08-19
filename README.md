@@ -1,5 +1,6 @@
 
 # 🐰바니마켓💛 : 바로 니곁에 마켓<br>
+지역적으로 물품거래, 소통이 가능한 중고거래 사이트<br>
 ![바니마켓](https://github.com/user-attachments/assets/46c6a134-101c-477e-aade-8d73bbe1a868)
 
 📍 지역 설정을 기반으로 한 온라인 중고거래 반응형 웹사이트(PC/Tablet/Mobile)
