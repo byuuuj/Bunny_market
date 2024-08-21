@@ -60,7 +60,8 @@ UI/UX는 '번개장터'의 웹사이트를 참고해 기획했다.
   <summary><b>마이페이지(판매내역,　나의후기,　회원탈퇴)</b></summary>
   <img width="1452" alt="스크린샷 2024-08-21 오후 8 33 24" src="https://github.com/user-attachments/assets/38b4ac71-619c-4354-bde9-16702c530942">
   <img width="1452" alt="스크린샷 2024-08-21 오후 8 33 40" src="https://github.com/user-attachments/assets/13032dd3-1b8d-4013-8c1b-19a27d33de59">
-  <img width="1451" alt="image" src="https://github.com/user-attachments/assets/9453b2a4-e338-4f68-9e9e-4303b82241b1">
+  <img width="1452" alt="image" src="https://github.com/user-attachments/assets/be4962fc-7d43-4f3d-8c19-e6b83529b939">
+
 
 
 
