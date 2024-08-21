@@ -16,6 +16,11 @@
 　　　조민경 : 동네소식, 마이페이지(내 정보, 모아보기) <br>
 　　　이호진 : 소개, 공지사항,리뷰 <br>
 　　　정이담 : FnQ, 약관 <br>
+* 협업 과정 <br>
+　　　-Notion, WorkBench, Sourcetree 활용
+　　　-코드 작성 가이드 , 화면 디자인 가이드
+　　　-팀규칙 (지각벌금제도, 스스로 코드작성, 모르면 도움 요청하기)
+　　　-매일 To-do-List 작성, 깃 Push
 *　개발 환경 : <br>
 　　　[ 백엔드 ]<br>
 　　　Spring boot, MySQL, JAVA<br>
@@ -27,7 +32,13 @@
 <br>
 <br>
 <br>
-   
+
+* 참고 사이트 : 기능으로는 지역적 SNS로 많이 활용되는 '당근마켓'를 참고하였다. 하지만 당근마켓은 어플이기 때문에,<br>
+UI/UX는 '번개장터'의 웹사이트를 참고해 기획했다.
+
+<br>
+<br>
+
 # ERD💙
 ![175081886-3c061efd-d820-4639-881b-c4d6154fd2f8](https://github.com/user-attachments/assets/8653d3dd-9953-49d7-b8eb-cb5a623f70d7)
 
