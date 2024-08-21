@@ -61,10 +61,37 @@ UI/UX는 '번개장터'의 웹사이트를 참고해 기획했다.
   <img width="1452" alt="스크린샷 2024-08-21 오후 8 33 24" src="https://github.com/user-attachments/assets/38b4ac71-619c-4354-bde9-16702c530942">
   <img width="1452" alt="스크린샷 2024-08-21 오후 8 33 40" src="https://github.com/user-attachments/assets/13032dd3-1b8d-4013-8c1b-19a27d33de59">
   <img width="1452" alt="image" src="https://github.com/user-attachments/assets/be4962fc-7d43-4f3d-8c19-e6b83529b939">
+</details>
 
+<br>
+<br>
+<br>
 
-
-
+## 📚트러블 슈팅  <br>
+<details>
+  <summary> 너무 복잡한 테이블 JOIN </summary>
+야심차게 테이블끼리 컬럼을 JOIN하고 연결시키겠다고 구조를 짰지만, idx, chat_idx, product_idx / seller_id, buyer_id , id
 
 </details>
+
+<details>
+  <summary> 반응형으로 웹과 태블릿, 모바일 세마리토끼 잡기.. </summary>
+웹이면서 줄어들면 모바일에 최적화 되게 만들어야 하다보니, 전체 UI/UX를 짜는 데 매우 어려움이 많았다.
+
+</details>
+
+<br>
+<br>
+<br>
+
+## ⭐️회고⭐️  <br>
+### 잘한 점 <br>
+* 한땀 한땀 CSS 작업으로 CSS 마스터<br>
+* 계층형 댓글 구현시 처음엔 이해가 잘 안되서 어려웠지만 구글링과 팀원들에게 물어봐서 개념잡고 결국 성공하다<br>
+* 동네 생활의 세세한 기능들<br>
+<br>
+### 아쉬운 점 <br>
+* Class명을 규칙없이 뒤죽박죽으로 작명한 것 -> 그때 그때 클래스명을 지었는데 좀더 규칙에 맞게!
+* 새롭게 추가 되는 기능에 의해 계속 전체 변경 작업 반복 -> 지역설정 부분에서 계속 코드 수정 요청이 들어와서 모든 코드를 또 하나하나 수정해야하는 경우가 여러번 있었다<br>
+* 로그인, 회원가입 쪽이 빨리 진행되지 않아, 로그인 여부에 따른 기능을 만드는데 어려움 겪음 -> 유저와 작성자가 같을 때, 로그인을 했을 때 등에 따라 달라지는 화면 구현이 늦어짐
 
